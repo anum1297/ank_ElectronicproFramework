@@ -1,0 +1,30 @@
+{
+  "default": {
+    "formatOptions": { "snippetInterface": "async-await" },
+    "require": [
+      "src/main/com/electronicpro/helpers/**/*.ts",
+      "src/main/com/electronicpro/driver/**/*.ts",
+      "src/test/com/electronicpro/steps/**/*.ts"
+    ],
+    "requireModule": [
+      "tsx/cjs"
+    ],
+    "paths": [
+      "src/test/com/electronicpro/features/**/*.feature"
+    ],
+    "format": [
+      "progress",
+      "pretty",
+      "html:reports/cucumber-report.html"
+    ],
+    "tags": "@Regression_Login",
+    "parallel": 2,
+    "publish": false,
+    "dryRun": false,
+    "strict": true,
+    "retry": 0,
+    "worldParameters": {
+      "screenshotOnFailure": true
+    }
+  }
+}
