@@ -1,15 +1,16 @@
+#Author: Aniket Ajay Umare
 Feature: Signup functionality
 
-@Regression_Electronicpro @Regression_signup
-Scenario: Verify signup with valid details
+@Regression_signup
+Scenario: TC001 Verify signup with valid details
     Given user launch browser with url
     When user click on signup link
     And user should enter signup details
     And user click on signup button and my account page is opened
     Then verify "My account" text
 
-@Regression_Electronicpro 
-Scenario: Verify signup with duplicate valid details
+@Regression_duplicatesignup 
+Scenario: TC002 Verify signup with duplicate valid details
     Given user launch browser with url
     When user click on signup link
     And user enter name as "harrytest2" and email as "harrytest2@gmail.com"

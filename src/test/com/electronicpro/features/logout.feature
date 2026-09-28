@@ -1,7 +1,8 @@
+#Author: Aniket Ajay Umare
 Feature: Logout functionality 
 
-    @Regression_Electronicpro @Regression_Logout
-    Scenario: Verify logout
+    @Regression_logout
+    Scenario: TC004 Verify logout
     Given user launch browser with url
     When user click on signin link and enter login credentails then click on login button
     When user click on logout link

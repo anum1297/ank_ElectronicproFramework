@@ -17,7 +17,7 @@
       "pretty",
       "html:reports/cucumber-report.html"
     ],
-    "tags": "@Regression_Login",
+    "tags": "@Regression_signup",
     "parallel": 2,
     "publish": false,
     "dryRun": false,

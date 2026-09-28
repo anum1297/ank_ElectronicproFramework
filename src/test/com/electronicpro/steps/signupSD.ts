@@ -36,5 +36,12 @@ Then('verify {string} text', async function (this: Initializer, expectedPageTitl
   }
 });
 
+Then('user should verify signup error message {string}', async function (this: Initializer, expectedErrorMessage: string) {
+  const actualErrorMessage = (await this.signupPage_object.getSignupErrorMessage()).trim();
+
+  if (actualErrorMessage !== expectedErrorMessage) {
+    throw new Error(`Expected error message "${expectedErrorMessage}" but got "${actualErrorMessage}"`);
+  }
+});
 
 

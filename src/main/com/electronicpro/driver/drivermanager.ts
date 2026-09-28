@@ -5,7 +5,7 @@ import { SignupPage } from "../../../../test/com/electronicpro/pageobjects/signu
 import { LoginPage } from "../../../../test/com/electronicpro/pageobjects/loginPage";
 import { LogoutPage } from "../../../../test/com/electronicpro/pageobjects/logoutPage";
 import { ShoppingcartPage } from "../../../../test/com/electronicpro/pageobjects/shoppingcartPage";
-import { AddressesPage } from "../../../../test/com/electronicpro/pageobjects/adressespage";
+import { AddressPage } from "../../../../test/com/electronicpro/pageobjects/addresspage";
 import { PaymentPage } from "../../../../test/com/electronicpro/pageobjects/paymentpage";
 
 Before({ timeout: 60000 }, async function (this: Initializer) {
@@ -34,7 +34,7 @@ Before({ timeout: 60000 }, async function (this: Initializer) {
   this.loginPage_object = new LoginPage(this.page);
   this.logoutPage_object = new LogoutPage(this.page);
   this.shoppingcartPage_object = new ShoppingcartPage(this.page);
-  this.addressesPage_object = new AddressesPage(this.page);
+  this.addressesPage_object = new AddressPage(this.page);
   this.paymentPage_object = new PaymentPage(this.page);
 });
 

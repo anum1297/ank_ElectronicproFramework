@@ -1,7 +1,8 @@
+#Author: Aniket Ajay Umare
 Feature: shopping cart functionality
 
-    @Regression_Electronicpro 
-    Scenario: Verify shopping cart with logged in user
+    @Regression_shoppingcart
+    Scenario: TC007 Verify shopping cart with logged in user
     Given user launch browser with url
     When user click on signin link and enter login credentails then click on login button
     When user click on shop button
@@ -11,8 +12,8 @@ Feature: shopping cart functionality
     And user click on checkout button
     Then user should navigate to checkout page "Order"
 
-    @Regression_Electronicpro 
-    Scenario: Verify shopping cart with anonymous user
+    @Regression_shoppingcart 
+    Scenario: TC008 Verify shopping cart with anonymous user
     Given user launch browser with url
     When user click on shop button
     And user click on select product
@@ -21,8 +22,8 @@ Feature: shopping cart functionality
     And user click on checkout button
     Then user should navigate to checkout page "Order"
 
-    @Regression_Electronicpro @Regression_ShoppingCart
-    Scenario: Verify remove product from shopping cart with logged in user
+    @Regression_shoppingcart
+    Scenario: TC009 Verify remove product from shopping cart with logged in user
     Given user launch browser with url
     When user click on signin link and enter login credentails then click on login button
     When user click on shop button
@@ -34,8 +35,8 @@ Feature: shopping cart functionality
     When user click on remove product
     Then user should verify remove product confirmation message "Your cart is empty."
 
-    @Regression_Electronicpro 
-    Scenario: Verify remove product from shopping cart with anonymous user
+    @Regression_shoppingcart 
+    Scenario: TC0010 Verify remove product from shopping cart with anonymous user
     Given user launch browser with url
     When user click on shop button
     And user click on select product

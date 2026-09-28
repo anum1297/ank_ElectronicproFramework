@@ -4,7 +4,7 @@ import { ShoppingcartPage } from '../../../../test/com/electronicpro/pageobjects
 import { LogoutPage } from '../../../../test/com/electronicpro/pageobjects/logoutPage';
 import { LoginPage } from '../../../../test/com/electronicpro/pageobjects/loginPage';
 import { SignupPage } from '../../../../test/com/electronicpro/pageobjects/signupPage';
-import { AddressesPage } from '../../../../test/com/electronicpro/pageobjects/adressespage';
+import { AddressPage } from '../../../../test/com/electronicpro/pageobjects/addresspage';
 import { PaymentPage } from '../../../../test/com/electronicpro/pageobjects/paymentpage';
 
 export class Initializer extends World {
@@ -19,7 +19,7 @@ export class Initializer extends World {
   loginPage_object!: LoginPage;
   logoutPage_object!: LogoutPage;
   shoppingcartPage_object!: ShoppingcartPage;
-  addressesPage_object!: AddressesPage
+  addressesPage_object!: AddressPage
   paymentPage_object!: PaymentPage;
 
   constructor(options: IWorldOptions) {
