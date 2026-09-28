@@ -14,7 +14,7 @@ Before({ timeout: 60000 }, async function (this: Initializer) {
   // For example, you can launch the browser and create a new page
 
   const browserName = "chromium";
-  const launchOptions: LaunchOptions = { headless: false, args: ['--start-maximized'] };
+  const launchOptions: LaunchOptions = { headless: false, args: ['--no-sandbox', '--disable-dev-shm-usage', '--start-maximized']};
 
   if (browserName === "chromium") {
     this.browser = await chromium.launch(launchOptions);
